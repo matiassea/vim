@@ -1,0 +1,81 @@
+https://www.freecodecamp.org/news/vim-editor-modes-explained/
+
+
+## Movimientos
+
+h move one character left
+j move one row down
+k move one row up
+l move one character right
+
+4j move 4 rows down
+6k move 6 rows up
+
+## Basic word movements
+
+w move to beginning of next word
+b move to previous beginning of word
+e move to end of word
+W move to beginning of next word after a whitespace
+B move to beginning of previous word before a whitespace
+E move to end of word before a whitespace
+
+## Beginning/End of line movement:
+
+0 move to the beginning of the line
+$ move to the end of the line
+
+
+to replace a single character, move your cursor over it and press r, and then the character you want to replace it with. 
+you can delete single characters by moving your cursor over it and pressing x.
+To perform an undo, press u in normal mode. This undoes changes up to the last time you were in normal mode
+If you want to redo (i.e., undo your undo) press Ctrl+r in normal mode.
+
+
+## Insert Mode
+i for ’insert’, this immediately switches vim to insert mode
+a for ’append’, this moves the cursor after the current character and enters insert mode
+o inserts a new line below the current line and enters insert mode on the new line
+
+I moves the cursor to the beginning of the line and enters insert mode
+A moves the cursor to the end of the line and enters insert mode
+O inserts a new line above the current one and enters insert mode on the new line
+
+
+## Visual Mode
+
+Press v to enter visual mode, this will also mark a starting selection point
+Move the cursor to the desired end selection point; vim will provide a visual highlight of the text selection
+
+V to enter visual line mode, this will make text selections by line
+<C-V> to enter visual block mode, this will make text selections by blocks; moving the cursor will make rectangle selections of the text
+
+
+The visual mode actually has multiple subtypes: visual, block-visual and linewise-visual
+
+- visual: like described above. Enter by pressing v
+- block-visual: select any rectangular region. Enter by pressing <ctrl>+v
+- linewise-visual: always select full lines. Enter by pressing <shift>+v
+    
+## Command Mode
+
+To enter command mode type ’:’ from normal mode and then type your command which should appear at the bottom of the window.
+
+- : Enters command mode
+- % Means across all lines
+- s Means substitute
+- /foo is regex to find things to replace
+- /bar/ is regex to replace things with
+- /g means global, otherwise it would only execute once per line
+  
+For example, to do a global find and replace type :%s/foo/bar/g to replace all ‘foo’ with ‘bar’
+
+Vim has a number of other methods that you can read about in the help documentation, :h or :help.
+
+
+## Replace Mode
+
+Replace mode allows you replace existing text by directly typing over it. Before entering this mode, 
+get into normal mode and put your cursor on top of the first character that you want to replace. 
+Then press ‘R’ (capital R) to enter replace mode. Now whatever you type will replace the existing text. 
+The cursor automatically moves to the next character just like in insert mode. The only difference is that every character you type will replace the existing one.
