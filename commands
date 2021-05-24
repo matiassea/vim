@@ -42,6 +42,40 @@ A moves the cursor to the end of the line and enters insert mode
 O inserts a new line above the current one and enters insert mode on the new line
 
 
+### Navigation 
+/ + word + enter => para buscar una palabra => N y CTRL-N
+CTRL-U y CTRL-D => para mover a hacia arriba o hacia abajo
+gg => al principio, shift + g => al final
+ww => navega entre palabras
+
+### Operaciones
+:w nombre.py => grabar con nombre
+:q => salir
+:q! => Salir sin guardar
+:e $MYVIMRC => Archivo de configuracion
+:wq => Guardar y salir
+:! ls => Comandos de linux
+dd => Cortar
+
+### Buffer
+:e "name" => abre un buffer 
+:bp => cambia al previo buffer 
+:bn=> cambia al next buffer
+
+### File managements
+vim . 
+
+### Navegar entre pantallas
+CTRL + ww cambia de pantallas
+:vsplit "name" => divide la pantalla en 2 en forma vertical
+:vs => al mismo archivo en 2 pantallas
+:split "name" => divide la pantalla en 2 en forma horizontal
+
+
+
+
+
+
 ## Visual Mode
 
 Press v to enter visual mode, this will also mark a starting selection point
