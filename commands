@@ -60,30 +60,49 @@ dd => Cortar
 :e "name" => abre un buffer 
 :bp => cambia al previo buffer 
 :bn=> cambia al next buffer
+:Buffers, :bprev, :bnext
+
 
 ### File managements
 vim . 
-:e + "name file"
+:e + "name file" => open file
+:Explore
+dentro de explorer, podemos buscar archivos con la barra espaciadora => /
+:Vex => Explorador vertical
+:Sex => Explorador horizontal
+
+:grep
+:copen
+:cprev
+:h
+
+#### Shortcuts vimrc
+,ds => Abrir carpeta data scientist
 
 ### Navegar entre pantallas
 CTRL + ww cambia de pantallas
+CTRL + H o J o K o L => para moverse entre pantallas
 :vsplit "name" => divide la pantalla en 2 en forma vertical
 :vs => al mismo archivo en 2 pantallas
 :split "name" => divide la pantalla en 2 en forma horizontal
 
 
 
-
-
-
 ## Visual Mode
-
 Press v to enter visual mode, this will also mark a starting selection point
 Move the cursor to the desired end selection point; vim will provide a visual highlight of the text selection
 
 V to enter visual line mode, this will make text selections by line
-<C-V> to enter visual block mode, this will make text selections by blocks; moving the cursor will make rectangle selections of the text
+<C-V> o <v> to enter visual block mode, this will make text selections by blocks; moving the cursor will make rectangle selections of the text
 
+apretar v, para seleccionar el tipo de selecion moviendo con "hjkl".
+Press v to select characters, or uppercase V to select whole lines, or Ctrl-v to select rectangular blocks 
+
+- Press d to cut.
+- Press y to copy.
+- Move to where you would like to paste.
+- Press P to paste before the cursor
+- p to paste after.
 
 The visual mode actually has multiple subtypes: visual, block-visual and linewise-visual
 
