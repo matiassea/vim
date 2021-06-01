@@ -1,5 +1,17 @@
 https://www.freecodecamp.org/news/vim-editor-modes-explained/
 
+git --version
+vim --version
+
+## VIMRC
+<leader> = ,
+NNOREMAP => remaps one key combinator to another
+NNOREMAP<C-J> <C-W><C-J> => I hit <C-J> do <C-W><C-J>
+
+MAP is recursive
+NOREMAP is not recursive
+La N inicial es para el mode "Normal",  sin letras aplica para todos los modos, "Normal", "Visual", "Select" and "Operator"
+
 
 ## Movimientos
 
@@ -33,6 +45,7 @@ If you want to redo (i.e., undo your undo) press Ctrl+r in normal mode.
 
 
 ## Insert Mode
+
 i for ’insert’, this immediately switches vim to insert mode
 a for ’append’, this moves the cursor after the current character and enters insert mode
 o inserts a new line below the current line and enters insert mode on the new line
@@ -41,7 +54,10 @@ I moves the cursor to the beginning of the line and enters insert mode
 A moves the cursor to the end of the line and enters insert mode
 O inserts a new line above the current one and enters insert mode on the new line
 
-### Navigation 
+CTRL + P => Select last word from list <C-P>
+
+### Navigation
+
 / + word + enter => para buscar una palabra => N y CTRL-N
 CTRL-U y CTRL-D => para mover a hacia arriba o hacia abajo
 gg => al principio, shift + g => al final
@@ -54,7 +70,30 @@ ww => navega entre palabras
 :e $MYVIMRC => Archivo de configuracion
 :wq => Guardar y salir
 :! ls => Comandos de linux
-dd => Cortar
+
+
+#### Copy and Cut
+dd => cut the current line, including the newline character at the end of the line
+d => cut
+y => Copy
+yy => yank the current line, including the newline character at the end of the line
+v => select characters
+<C-v> => to select whole lines
+
+#### Paste
+p => paste after the cursor, gp, Normal mode
+<S-P> => paste after the cursor, g<S-P>, Normal mode
+
+<C-f> => paste en command line
+
+The contents of a register can be pasted while in insert mode: type Ctrl-r then a character that identifies the register. 
+For example, Ctrl-r then " pastes from the default register, and Ctrl-r then 0 pastes from register zero which holds the 
+text that was most recently yanked (copied)
+
+x => delete the char under cursor
+":help"
+
+
 
 ### Buffer
 :e "name" => abre un buffer 
