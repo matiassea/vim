@@ -73,7 +73,7 @@ ww => navega entre palabras
 
 ### Set Working direction
 Para crear un nuevo archivo en :Vex, se debe apretar %
-Para crear un nuevo directorio en :Vex, se debe apretar %
+Para crear un nuevo directorio en :Vex, se debe apretar d
 :term => para abrir el terminal
 
 
@@ -115,8 +115,10 @@ x => delete the char under cursor
 ### File managements
 vim . 
 :e + "name file" => open file
-:Explore
-dentro de explorer, podemos buscar archivos con la barra espaciadora => /
+:Explore o :E o :Ex=> Explorar
+SHIFT + D , y => Para borrar archivos 
+CTRL + O => Para volver a la pantalla anterior
+/ => dentro de explorer, podemos buscar archivos con la barra espaciadora
 :Vex => Explorador vertical
 :Sex => Explorador horizontal
 
