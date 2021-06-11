@@ -70,6 +70,7 @@ ww => navega entre palabras
 :e $MYVIMRC => Archivo de configuracion
 :wq => Guardar y salir
 :! ls => Comandos de linux
+:colorscheme [space] [Ctrl+d] => para ver opciones o apretar TAB
 
 ### Set Working direction
 Para crear un nuevo archivo en :Vex, se debe apretar %
@@ -121,6 +122,7 @@ CTRL + O => Para volver a la pantalla anterior
 / => dentro de explorer, podemos buscar archivos con la barra espaciadora
 :Vex => Explorador vertical
 :Sex => Explorador horizontal
+:x => cerrar la actual ventana
 
 :grep
 :copen
