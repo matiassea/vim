@@ -57,13 +57,49 @@ O inserts a new line above the current one and enters insert mode on the new lin
 CTRL + P => Select last word from list <C-P>
 
 ### Navigation
+"https://www.freecodecamp.org/news/how-not-to-be-afraid-of-vim-anymore-ec0b7264b0ae/
 
 / + word + enter => para buscar una palabra => N y CTRL-N
 CTRL-U y CTRL-D => para mover a hacia arriba o hacia abajo
 gg => al principio, shift + g => al final
 ww => navega entre palabras
+e => ending of current word
+b => beginning of previous word
+
+$ => end of line
+0 => beginning of line
+G => end of file
+nG => jump to line number n
+) => jump forward a sentence
+} => jump forward a paragraph
+
+    Delete the next 3 lines ( including current line)
+    d3j
+    
+    Copy current word — cursor is at beginning of word
+    yw
+    
+    Copy current word — it has special characters — cursor is in the middle of the word
+    yiW : the yank inside is to yank inside, and W is inside what to yank ( current word). This is amazingly useful, you can use all sorts of combinations with inside !
+    
+    Navigate down 10 lines
+    10j
+    
+    Delete everything inside the curly brackets
+    di} : just like #3.
+    
+    Go up 2 paragraphs
+    2{ : this was slightly more intuitive. { is to go up a para, } is to go down a para
+    
+    Paste the previously selected text 5 times.
+    5p : remember the optional numbers from the command anatomy? They can be used almost anywhere
+    
+    Edit where the cursor is present: “I can Vim now!”
+    i I can Vim now! : i is to go into insert mode, then you can work like in a “normal” editor
+    
 
 ### Operaciones
+:help user-manual => 
 :w nombre.py => grabar con nombre
 :q => salir
 :q! => Salir sin guardar
@@ -81,15 +117,28 @@ Para crear un nuevo directorio en :Vex, se debe apretar d
 
 
 #### Copy and Cut
-dd => cut the current line, including the newline character at the end of the line
+
 x => cut
+
+dd => delete the current line, including the newline character at the end of the line
 d => delete
+di => delete inside
+
 i => insert
+
+yy => To copy the current line
 y => Copy
+
 u => undo
 yy => yank the current line, including the newline character at the end of the line
 v => select characters
 <C-v> => to select whole lines
+/ => Search
+% => parentheses matching, developers rejoice
+:s =>  : substitute! In other words, find-replace on steroids
+
+
+
 
 #### Paste
 p => paste after the cursor, gp, Normal mode
