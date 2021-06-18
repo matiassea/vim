@@ -107,6 +107,10 @@ nG => jump to line number n
 :wq => Guardar y salir
 :! ls => Comandos de linux
 :colorscheme [space] [Ctrl+d] => para ver opciones o apretar TAB
+Ctrl-O  jump back to the previous (older) location.
+Ctrl-I (same as Tab) to jump forward to the next (newer) location.
+:hide => close current window
+
 
 ### Set Working direction
 Para crear un nuevo archivo en :Vex, se debe apretar %
@@ -160,6 +164,10 @@ x => delete the char under cursor
 :bp => cambia al previo buffer 
 :bn=> cambia al next buffer
 :Buffers, :bprev, :bnext
+:bd => will close the current buffer
+:pwd
+https://vim.fandom.com/wiki/Jumping_to_previously_visited_locations
+:ls              - show current buffers
 
 
 ### File managements
