@@ -65,6 +65,8 @@ gg => al principio, shift + g => al final
 ww => navega entre palabras
 e => ending of current word
 b => beginning of previous word
+% => create new file
+
 
 $ => end of line
 0 => beginning of line
