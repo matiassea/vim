@@ -122,6 +122,7 @@ O => Insertar una nueva linea y dejar en modo insert
 N => proxima palabra
 Sht + N => volver a la palabra encontrada
 CTRL + P => Select last word from list <C-P>
+CTRL + N => Select last word from list <C-N>
 
 
 ### Set Working direction
