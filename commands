@@ -59,9 +59,11 @@ CTRL + P => Select last word from list <C-P>
 ### Navigation
 "https://www.freecodecamp.org/news/how-not-to-be-afraid-of-vim-anymore-ec0b7264b0ae/
 
-/ + word + enter => para buscar una palabra => N y CTRL-N
-CTRL-U y CTRL-D => para mover a hacia arriba o hacia abajo
-gg => al principio, shift + g => al final
+
+CTRL-U => para mover a hacia arriba o hacia abajo
+CTRL-D => para mover a hacia arriba o hacia abajo
+gg => al principio del archivo
+Shift + g => al final del archivo
 ww => navega entre palabras
 e => ending of current word
 b => beginning of previous word
@@ -112,6 +114,13 @@ nG => jump to line number n
 Ctrl-O  jump back to the previous (older) location.
 Ctrl-I (same as Tab) to jump forward to the next (newer) location.
 :hide => close current window
+u => deshacer
+Ctrl - R => Rehacer
+O => Insertar una nueva linea y dejar en modo insert
+/ => para buscar palabra
+/ + word + enter => para buscar una palabra => N y CTRL-N
+N => proxima palabra
+Sht + N => volver a la palabra encontrada
 
 
 ### Set Working direction
