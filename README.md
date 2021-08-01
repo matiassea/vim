@@ -10,8 +10,11 @@ https://dev.to/shahinsha/how-to-make-vim-a-python-ide-best-ide-for-python-23e1
 
 
 Let's install vundle:
+
 Open your terminal and type :
+```
 $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
 abrir vim y escribir :version
 utilizar la ruta que aparece en "user vimrc file"
